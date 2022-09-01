@@ -1,0 +1,16 @@
+<div>
+    <form #todoForm="ngForm" (ngSubmit)="submitTask()">
+        <label>Task:</label>
+        <input
+          Input
+          type="text"
+          class="form-control"
+          id="task"
+          name="task"
+          placeholder="Enter your task..."
+          [(ngModel)]="formTodo.task"
+          required
+        />
+      <button type="submit" >Submit</button>
+    </form>
+  </div>
