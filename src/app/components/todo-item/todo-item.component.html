@@ -1,7 +1,12 @@
-<div>
-    <button (click)="completeTask()">COMPLETE</button>
+<div class="item">
+    <button
+      class="completeBtn"
+      [class.disabledBtn]="todo.completed ? 'disabledBtn' : ''"
+      (click)="completeTask()"
+    >
+      COMPLETE
+    </button>
     {{ todo.task }}
     <button (click)="removeTask()">
-     <span>X</span>
     </button>
   </div>
