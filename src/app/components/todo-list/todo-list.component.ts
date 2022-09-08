@@ -1,4 +1,4 @@
-
+import { animate, animation, style, useAnimation } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { ToDo } from 'src/app/interface/to-do';
 @Component({
@@ -8,7 +8,7 @@ import { ToDo } from 'src/app/interface/to-do';
 })
 export class TodoListComponent implements OnInit {
 
-  title: string = 'My To-Do List';    // it's getting used in html file
+  title: string = 'Weekend To-Do List';    // it's getting used in html file
 
   todoList: ToDo[] = [];
 
@@ -63,7 +63,7 @@ export class TodoListComponent implements OnInit {
   completeTodo(todo: string, i: number): void {
         let tempTodo = {
           task: todo,
-          completed: true,
+          completed: false,
         };
 
        console.log(this.todoList[i]);
@@ -86,8 +86,4 @@ export class TodoListComponent implements OnInit {
       // console.log(this.filteredIndexes);
     }
   }
-
-
-
-
 }

@@ -21,7 +21,6 @@ export class TodoItemComponent implements OnInit {
   @Output() remove = new EventEmitter<string>();
 
 
-
   constructor() {
     this.todo = {
       task: '',

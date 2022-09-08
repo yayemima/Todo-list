@@ -1,0 +1,14 @@
+<div class="searchContainer">
+    <h2>Filter List</h2>
+      <input
+        matInput
+        type="text"
+        class="form-control"
+        id="task"
+        name="task"
+        placeholder="Enter your to-do..."
+        [(ngModel)]="searchValue"
+        (ngModelChange)="onChange($event)"
+        required
+      />
+  </div>
